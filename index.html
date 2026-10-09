@@ -8,8 +8,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="manifest" href="./manifest.webmanifest">
-<link rel="icon" type="image/png" href="./icon-192.png">
-<link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="icon" type="image/png" href="./icons/icon-192.png">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
 <title>W.A.G.E. • Joliet Data Engine v0.5</title>
 <style>
 :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;--bg:#0c141b;--panel:#16222d;--sub:#1c2d38;--border:#38505a;--fg:#f0f5f6;--muted:#afc3cd;--green:#8bdac0;--red:#ffa39d;--blue:#88ccf5;color:var(--fg);background:var(--bg)}
@@ -20,19 +20,9 @@ a{color:#9bd9f0}h1,h2,h3{line-height:1.15}h1{font-size:1.7rem;margin:3px 0 5px}h
 @media print{body{background:#fff;color:#000}.panel,.stat,.surface{border-color:#bbb;background:#fff;color:#000}.nav,.actions,.footer{display:none}main{max-width:none}small,.muted{color:#444}}
 
 .installbox{background:linear-gradient(110deg,#153b3c,#182c40);border:1px solid #4e7d7f;border-radius:15px;padding:13px 16px;margin:0 0 14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap} .installbox .info{flex:1;min-width:200px} .installbox strong{display:block;font-size:1rem} .installbox small{display:block;line-height:1.45;margin-top:4px} .installbox button{background:#297869;border-color:#6abda9;white-space:nowrap;font-weight:700} .installbox button:disabled{opacity:.55;cursor:not-allowed}
-
-/* Pillar 7 branded theme */
-body{background:#06182a url('./wage-cover.jpg') center top / cover fixed no-repeat;}
-body::before{content:"";position:fixed;inset:0;background:rgba(3,13,27,.83);z-index:-1;pointer-events:none}
-main{position:relative;z-index:1}
-.panel,.surface,.stat,.installbox{background-color:rgba(13,32,51,.94)}
-#wage-splash{position:fixed;inset:0;z-index:99999;background:#06182a url('./wage-cover.jpg') center center / contain no-repeat;display:flex;align-items:flex-end;justify-content:center;transition:opacity .4s ease}
-#wage-splash.hide{opacity:0;pointer-events:none}
-#wage-splash .splash-status{margin-bottom:env(safe-area-inset-bottom,12px);padding:8px 16px;border-radius:20px;background:rgba(3,13,27,.78);color:#f4d899;font-size:12px;letter-spacing:.06em}
-@media(prefers-reduced-motion:reduce){#wage-splash{transition:none}}
 </style>
 </head>
-<body><div id="wage-splash" role="status" aria-label="Opening W.A.G.E."><div class="splash-status">Opening W.A.G.E. …</div></div><main>
+<body><main>
 <header class="header"><div><div class="kicker">Workforce Economic Intelligence</div><h1>W.A.G.E. <span style="font-size:.75rem;color:#b5c9d0">v0.5</span></h1><div class="subhead">Wage Affordability &amp; Gain Evaluation · Joliet 60432 · 35-mile job radius</div></div><div class="tag">Baseline starts · Jan 2023</div></header>
 <div class="installbox" id="installpanel" aria-live="polite"><div class="info"><strong>📱 W.A.G.E. on your home screen</strong><small id="installstatus">This version is prepared to install as an app after it's published at a secure (HTTPS) web address. The calculator works offline once it has been loaded and installed.</small></div><button type="button" id="installbtn">Install W.A.G.E.</button></div>
 <div class="note" style="margin-bottom:12px"><b>Evidence rules:</b> The archived gasoline values are actual <b>weekly Chicago-area averages</b>, not daily Joliet station prices. Historical job-offer and commuting-time series are <b>not</b> available in this preload. Figures marked “model” are assumptions, not observed history. When hosted, this page reads the generated data feed; when opened as a standalone file, it falls back to its embedded verified historical baseline.</div>
@@ -250,8 +240,5 @@ if('serviceWorker' in navigator && (location.protocol==='https:' || location.hos
  window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js',{scope:'./'}).catch(err=>{installStatus.textContent='Offline install cache could not start: '+err.message}));
 }
 showInstallStatus();
-</script>
-<script>
-(function(){let splash=document.getElementById('wage-splash');function closeSplash(){if(!splash)return;splash.classList.add('hide');setTimeout(()=>splash.remove(),450)};if(document.readyState==='complete')closeSplash();else window.addEventListener('load',closeSplash,{once:true});setTimeout(closeSplash,2200)})();
 </script>
 </body></html>
