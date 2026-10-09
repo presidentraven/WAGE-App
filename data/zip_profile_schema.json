@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "W.A.G.E. ZIP coverage profile",
+  "type": "object",
+  "required": [
+    "zip",
+    "source_level",
+    "as_of",
+    "items"
+  ],
+  "properties": {
+    "zip": {
+      "type": "string",
+      "pattern": "^[0-9]{5}$"
+    },
+    "source_level": {
+      "enum": [
+        "zip",
+        "zcta",
+        "county",
+        "metro",
+        "state",
+        "national",
+        "unavailable"
+      ]
+    },
+    "as_of": {
+      "type": "string",
+      "format": "date"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "metric",
+          "value",
+          "unit",
+          "source",
+          "date",
+          "geography"
+        ],
+        "properties": {
+          "metric": {
+            "type": "string"
+          },
+          "value": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "unit": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "geography": {
+            "type": "string"
+          },
+          "observation_type": {
+            "enum": [
+              "measured",
+              "survey",
+              "modeled",
+              "user-entered",
+              "unavailable"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

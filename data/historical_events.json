@@ -1,0 +1,138 @@
+{
+  "cutoff": "2026-10-09",
+  "policies": [
+    {
+      "date": "2023-01-01",
+      "title": "Illinois standard adult minimum wage: $13.00/hr",
+      "description": "Effective date for the general adult rate; exceptions exist for some worker categories.",
+      "type": "wage law",
+      "source": "https://ilga.gov/legislation/ilcs/fulltext?DocName=082001050K4"
+    },
+    {
+      "date": "2024-01-01",
+      "title": "Minimum wage rises to $14.00/hr",
+      "description": "General adult rate.",
+      "type": "wage law",
+      "source": "https://ilga.gov/legislation/ilcs/fulltext?DocName=082001050K4"
+    },
+    {
+      "date": "2024-01-01",
+      "title": "Illinois Paid Leave for All Workers Act begins",
+      "description": "Covered workers generally accrue paid leave at 1 hour per 40 hours worked, up to 40 hours a year; eligibility and usage rules apply.",
+      "type": "employment policy",
+      "source": "https://labor.illinois.gov/faqs/paidleavefaq.html"
+    },
+    {
+      "date": "2025-01-01",
+      "title": "Minimum wage rises to $15.00/hr",
+      "description": "General adult rate; remains at $15.00/hr through the October 2026 cutoff.",
+      "type": "wage law",
+      "source": "https://ilga.gov/legislation/ilcs/fulltext?DocName=082001050K4"
+    },
+    {
+      "date": "2025-01-01",
+      "title": "Illinois job-posting pay transparency begins",
+      "description": "Qualifying Illinois postings from employers with at least 15 employees must disclose pay scale and benefits.",
+      "type": "employment policy",
+      "source": "https://labor.illinois.gov/laws-rules/conmed/equal-pay-act-salary-transparency.html"
+    },
+    {
+      "date": "2026-02-15",
+      "title": "MIT Will County living-wage update: $26.90/hr",
+      "description": "One adult, zero children, 2,080 hours/year. Benchmark as of February 15, 2026; NOT a historical value for prior years.",
+      "type": "cost benchmark",
+      "source": "https://livingwage.mit.edu/counties/17197"
+    }
+  ],
+  "construction": [
+    {
+      "date": "2024-07-30",
+      "title": "Ruby Street bridge closure announced for July 30\u2013August 2",
+      "description": "Scheduled closure of Illinois 53 bridge over Des Plaines River for aerial-tower installation; actual traffic delays not quantified.",
+      "type": "roadwork",
+      "source": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/about-idot/news/construction-releases/2024/july/7.26.24%20Ruby%20St%20bridge%20closure.pdf"
+    },
+    {
+      "date": "2024-08-12",
+      "title": "Cass Street bridge reduced to one lane",
+      "description": "IDOT announced reduction from three lanes to one due to structural steel corrosion; planned indefinitely as of the announcement.",
+      "type": "roadwork",
+      "source": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/about-idot/news/construction-releases/2024/august/8.8.24%20Cass%20St%20bridge.pdf"
+    },
+    {
+      "date": "2024-09-30",
+      "title": "Downtown Chicago Street streetscape / water-main closure",
+      "description": "City said Chicago Street Jefferson\u2013Cass and Clinton Street Ottawa\u2013Scott closures would expand beginning Sept. 30 for approximately three days.",
+      "type": "roadwork",
+      "source": "https://www.joliet.gov/Home/Components/News/News/4924/"
+    },
+    {
+      "date": "2024-12-13",
+      "title": "Cass Street bridge closure for approximately two weeks",
+      "description": "IDOT planned downtown bridge closure beginning Dec. 13 for measurement and design work, weather permitting.",
+      "type": "roadwork",
+      "source": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/about-idot/news/construction-releases/2024/december/12.6.24%20Cass%20bridge%20to%20close.pdf"
+    },
+    {
+      "date": "2025-03-24",
+      "title": "I-80 / I-55 interchange ramp closure phase",
+      "description": "IDOT announced a southbound I-55 to eastbound I-80 closure anticipated until fall 2026; stage change was rescheduled.",
+      "type": "roadwork",
+      "source": "https://illinois-department-of-transportation.prezly.com/i-80-lane-changes-ramp-closures-cud284"
+    },
+    {
+      "date": "2025-10-26",
+      "title": "I-80 Joliet stage changes",
+      "description": "IDOT announced traffic pattern changes for I-80 from Chicago Street to Houbolt Road with overnight closures, weather permitting.",
+      "type": "roadwork",
+      "source": "https://illinois-department-of-transportation.prezly.com/i-80-lane-changes-in-joliet"
+    },
+    {
+      "date": "2025-12-22",
+      "title": "I-80 Center Street / Meadow Avenue reconstruction closure",
+      "description": "IDOT forecasted reopening of ramps and bridge in late 2028; this was the announced plan, not proof of completed closure.",
+      "type": "roadwork",
+      "source": "https://illinois-department-of-transportation.prezly.com/i-80-at-center-street-interchange-to-close-dec-22"
+    },
+    {
+      "date": "2026-04-24",
+      "title": "I-80 / Chicago Street interchange ramps closed for major works",
+      "description": "Published closure/detour announcement reported ramps will remain restricted until 2028.",
+      "type": "roadwork",
+      "source": "https://www.cbsnews.com/chicago/news/i-80-ramps-chicago-street-joliet-closed-construction-detour/"
+    },
+    {
+      "date": "2026-07-07",
+      "title": "I-80 / I-55 ramp changes",
+      "description": "IDOT announced additional ramp closures, anticipated to reopen in late fall 2026, weather permitting.",
+      "type": "roadwork",
+      "source": "https://illinois-department-of-transportation.prezly.com/i-80-at-i-55-interchange-ramp-changes-begin-july-1"
+    }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-10-12",
+      "title": "Scheduled: Jackson Street bridge overnight closures through Oct 17",
+      "description": "IDOT forecasted five consecutive 7 p.m.\u20137 a.m. closures; cannot be treated as observed traffic history as of Oct 9.",
+      "source": "https://illinois-department-of-transportation.prezly.com/jackson-street-bridge-over-des-plaines-river-in-joliet-full-closure-over-five-consecutive-nights"
+    }
+  ],
+  "minimum_wage": [
+    {
+      "date": "2023-01-01",
+      "rate": 13
+    },
+    {
+      "date": "2024-01-01",
+      "rate": 14
+    },
+    {
+      "date": "2025-01-01",
+      "rate": 15
+    },
+    {
+      "date": "2026-01-01",
+      "rate": 15
+    }
+  ]
+}
