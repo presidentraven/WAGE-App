@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Bundle the latest validated snapshot into a standalone and hosted HTML dashboard."""
 import csv,json,pathlib
-ROOT=pathlib.Path(__file__).resolve().parents[1]
+ROOT=pathlib.Path(__file__).resolve().parent
 arch=json.loads((ROOT/'data/historical_events.json').read_text())
 feed=json.loads((ROOT/'data/current.json').read_text())
 assert feed['schema_version']==1 and len(feed['fuel'])>=197
