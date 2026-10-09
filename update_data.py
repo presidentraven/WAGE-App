@@ -4,7 +4,7 @@ Network mode requires EIA_API_KEY in an environment variable, never a browser fi
 Stale/invalid responses cause failure, retaining the last committed file.
 """
 import argparse,csv,datetime as dt,json,os,pathlib,urllib.parse,urllib.request
-ROOT=pathlib.Path(__file__).resolve().parents[1]
+ROOT=pathlib.Path(__file__).resolve().parent
 CSV=ROOT/'data/eia_chicago_weekly.csv'
 STATE=ROOT/'data/current.json'
 SERIES='EMM_EPMR_PTE_YORD_DPG'
