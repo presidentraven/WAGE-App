@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: wage-gasoline-update
@@ -45,5 +47,17 @@ jobs:
           else
             git commit -m "Update verified EIA gasoline observations"
             git push
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Publish website
+        id: deployment
+        uses: actions/deploy-pages@v4
+ 
           fi
           
