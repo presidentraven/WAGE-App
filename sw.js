@@ -1,6 +1,6 @@
 // W.A.G.E. v0.5 — offline shell, only same-origin public resources.
-const VERSION='wage-joliet-pwa-v05';
-const ASSETS=['./','./index.html','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./data/current.json'];
+const VERSION='wage-joliet-pwa-v06';
+const ASSETS=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png','./wage-cover.jpg'];
 self.addEventListener('install',event=>event.waitUntil((async()=>{const cache=await caches.open(VERSION);await cache.addAll(ASSETS);await self.skipWaiting()})()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{for(const key of await caches.keys()){if(key.startsWith('wage-joliet-pwa-')&&key!==VERSION)await caches.delete(key)}await self.clients.claim()})()));
 self.addEventListener('fetch',event=>{const req=event.request;const url=new URL(req.url);if(req.method!=='GET'||url.origin!==self.location.origin)return;
