@@ -200,3 +200,4 @@ date,type,value,unit,location,geography,frequency,source_url,observed_or_effecti
 2026-10-19,fuel,4.705,USD_per_gallon,Chicago metro,regional_proxy,weekly,https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=W&n=PET&s=EMM_EPMR_PTE_YORD_DPG,observed
 2026-10-26,fuel,4.897,USD_per_gallon,Chicago metro,regional_proxy,weekly,https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=W&n=PET&s=EMM_EPMR_PTE_YORD_DPG,observed
 2026-11-02,fuel,4.706,USD_per_gallon,Chicago metro,regional_proxy,weekly,https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=W&n=PET&s=EMM_EPMR_PTE_YORD_DPG,observed
+2026-11-09,fuel,4.461,USD_per_gallon,Chicago metro,regional_proxy,weekly,https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=W&n=PET&s=EMM_EPMR_PTE_YORD_DPG,observed
